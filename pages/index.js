@@ -8,6 +8,13 @@ import Date from '../components/date'
 import TypeAnimation from 'react-type-animation';
 import { useTheme } from 'next-themes'
 
+const RSS_URL = 'http://www.akhisarhaber.com/rss/';
+
+fetch(RSS_URL)
+  .then(response => response.text())
+  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+  .then(data => console.log(data))
+
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme()
 
