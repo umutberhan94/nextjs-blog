@@ -33,12 +33,6 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Umut. I'm a front-end developer. I'm learning Next.js to build modern web applications. I hope that it's going to be a fun learning journey 😊</p>
       </section>
-      <section>
-        <form action="/api/hello" method="post">
-          <input type="text" name="email" />
-          <button>Gönder!</button>
-        </form>
-      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
