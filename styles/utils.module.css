@@ -46,7 +46,11 @@
 
 .listItem {
   margin: 0 0 1.25rem;
+  border: #666 solid 1px;
+  border-radius: 15px;
+  padding: 20px;
 }
+
 
 .lightText {
   color: #666;
